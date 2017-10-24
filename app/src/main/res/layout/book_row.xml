@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:elevation="5dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:scaleType="centerInside"
+            android:src="@drawable/book_cover" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:id="@+id/bookNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="book name" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/authorNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="writer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/bookRatingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.9" />
+
+            <ImageView
+                android:background="@color/colorYellow"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/rating_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
